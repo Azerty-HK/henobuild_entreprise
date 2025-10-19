@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henobuild - Notre Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        .project-overlay {
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="https://huggingface.co/spaces/Henock12/henobuild-digital-solutions-hub/resolve/main/images/IMG-20251018-WA0072(2).jpg" alt="Henobuild Logo" class="h-10">
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#services" class="text-gray-600 hover:text-purple-600 transition">Services</a>
+                    <a href="index.html#process" class="text-gray-600 hover:text-purple-600 transition">Processus</a>
+                    <a href="index.html#pricing" class="text-gray-600 hover:text-purple-600 transition">Tarifs</a>
+                    <a href="index.html#contact" class="text-gray-600 hover:text-purple-600 transition">Contact</a>
+                    <a href="portfolio.html" class="text-purple-600 font-semibold">Portfolio</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-purple-500 to-pink-500 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Notre Portfolio</h1>
+            <p class="text-xl max-w-2xl mx-auto">Découvrez nos réalisations et laissez-vous inspirer pour votre prochain projet.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md relative">
+                    <img src="http://static.photos/technology/640x360/1" alt="Projet Site Web" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Site Web Corporatif</h3>
+                        <p class="text-center mb-4">Site vitrine moderne avec blog intégré pour une entreprise de consulting.</p>
+                        <a href="#" class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-full text-sm font-semibold">Voir détails</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md relative">
+                    <img src="http://static.photos/office/640x360/2" alt="Projet Application Mobile" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Application E-commerce</h3>
+                        <p class="text-center mb-4">Solution mobile de vente en ligne avec paiement mobile money intégré.</p>
+                        <a href="#" class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-full text-sm font-semibold">Voir détails</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md relative">
+                    <img src="http://static.photos/education/640x360/3" alt="Projet Plateforme Éducative" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Plateforme Éducative</h3>
+                        <p class="text-center mb-4">Système LMS complet avec cours en ligne, quiz et certification.</p>
+                        <a href="#" class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-full text-sm font-semibold">Voir détails</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md relative">
+                    <img src="http://static.photos/finance/640x360/4" alt="Projet Solution Fintech" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Solution Fintech</h3>
+                        <p class="text-center mb-4">Application bancaire mobile avec transferts et gestion de portefeuille.</p>
+                        <a href="#" class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-full text-sm font-semibold">Voir détails</a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md relative">
+                    <img src="http://static.photos/medical/640x360/5" alt="Projet Santé Digitale" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Solution Santé Digitale</h3>
+                        <p class="text-center mb-4">Plateforme de rendez-vous médicaux et gestion de dossiers patients.</p>
+                        <a href="#" class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-full text-sm font-semibold">Voir détails</a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md relative">
+                    <img src="http://static.photos/retail/640x360/6" alt="Projet IA Commerciale" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">IA Commerciale</h3>
+                        <p class="text-center mb-4">Solution de recommandation intelligente pour sites e-commerce.</p>
+                        <a href="#" class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-full text-sm font-semibold">Voir détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-purple-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Prêt à transformer votre idée en réalité ?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Contactez-nous dès aujourd'hui pour discuter de votre projet et obtenir une estimation gratuite.</p>
+            <a href="index.html#contact" class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Soumettre un projet</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Henobuild</h3>
+                    <p class="text-gray-400">Transformons vos idées en solutions digitales puissantes.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="index.html#process" class="text-gray-400 hover:text-white transition">Processus</a></li>
+                        <li><a href="index.html#pricing" class="text-gray-400 hover:text-white transition">Tarifs</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition">Portfolio</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-2 w-4 h-4 text-gray-400"></i>
+                            <span class="text-gray-400">henockaduma2@gmail.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2 w-4 h-4 text-gray-400"></i>
+                            <span class="text-gray-400">+243 979 241 694</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Réseaux Sociaux</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 Henobuild SARL. Tous droits réservés.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Confidentialité</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Conditions</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize feather icons
+        feather.replace();
+    </script>
+</body>
+  </html>
